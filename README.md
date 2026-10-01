@@ -1,19 +1,20 @@
 # abox.tools translations, frozen
 
-Ten of the site's languages as they were on 11 September 2026, kept
+Eight of the site's languages as they were on 11 September 2026, kept
 exactly as they were deployed, and served from here rather than rebuilt:
 
-Arabic (`ar`), French (`fr`), Hindi (`hi`), Indonesian (`id`), Italian (`it`),
-Japanese (`ja`), Korean (`ko`), Dutch (`nl`), Turkish (`tr`) and Traditional
-Chinese (`zh-TW`).
+Arabic (`ar`), Hindi (`hi`), Indonesian (`id`), Italian (`it`), Korean (`ko`),
+Dutch (`nl`), Turkish (`tr`) and Traditional Chinese (`zh-TW`).
 
-English, Simplified Chinese, German, Spanish and Brazilian Portuguese are built
+English, Simplified Chinese, German, Spanish, Brazilian Portuguese, French and
+Japanese are built
 from [A-Box-of-Tools/website](https://github.com/A-Box-of-Tools/website) and are
 the languages the site is maintained in. German was brought back first;
-Spanish and Portuguese followed on 30 September 2026. Their translations are
+Spanish and Portuguese followed on 30 September 2026; French and Japanese
+followed on 1 October 2026. Their translations are
 maintained in the website's `locales/`, and their generated folders no longer
-belong to the frozen deployment. The original Spanish and Portuguese source
-translations remain here as a historical reference.
+belong to the frozen deployment. The original source translations of every restored language remain here as a
+historical reference.
 
 ## Why they stopped being built
 
