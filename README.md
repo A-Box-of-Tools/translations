@@ -1,15 +1,20 @@
 # abox.tools translations, frozen
 
-Thirteen of the site's languages as they were on 11 September 2026, kept
+Eight of the site's languages as they were on 11 September 2026, kept
 exactly as they were deployed, and served from here rather than rebuilt:
 
-Arabic (`ar`), German (`de`), Spanish (`es`), French (`fr`), Hindi (`hi`),
-Indonesian (`id`), Italian (`it`), Japanese (`ja`), Korean (`ko`), Dutch (`nl`),
-Portuguese (`pt`), Turkish (`tr`) and Traditional Chinese (`zh-TW`).
+Arabic (`ar`), Hindi (`hi`), Indonesian (`id`), Italian (`it`), Korean (`ko`),
+Dutch (`nl`), Turkish (`tr`) and Traditional Chinese (`zh-TW`).
 
-English and Simplified Chinese are still built from
-[A-Box-of-Tools/website](https://github.com/A-Box-of-Tools/website) and are the
-languages the site is maintained in.
+English, Simplified Chinese, German, Spanish, Brazilian Portuguese, French and
+Japanese are built
+from [A-Box-of-Tools/website](https://github.com/A-Box-of-Tools/website) and are
+the languages the site is maintained in. German was brought back first;
+Spanish and Portuguese followed on 30 September 2026; French and Japanese
+followed on 1 October 2026. Their translations are
+maintained in the website's `locales/`, and their generated folders no longer
+belong to the frozen deployment. The original source translations of every restored language remain here as a
+historical reference.
 
 ## Why they stopped being built
 
@@ -60,6 +65,8 @@ and the links to the English and Chinese pages they were translated from.
 
 Move `source/locales/<lang>/` back into the website's `locales/`, take the
 language off `frozen_languages` in its `config/site.toml`, and translate what
-English has gained since. Its folder here then stops being deployed the day the
-website builds it again. Editing `site/` by hand is possible and is best kept
+English has gained since. Remove its generated `site/<lang>/` folder from an archive revision and pin
+that revision in the website: the deploy verifies that the archive contains
+exactly the languages still frozen. The website builds the restored language
+instead; a push to this archive alone never changes the live site. Editing `site/` by hand is possible and is best kept
 for an emergency: whatever is changed here is changed only here.
